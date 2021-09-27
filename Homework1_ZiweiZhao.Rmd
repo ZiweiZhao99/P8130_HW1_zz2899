@@ -8,7 +8,7 @@ output: github_document
 library(tidyverse)
 ```
 
-### Problem 1
+## Problem 1
 
 **a)**  
 qualitative, ordinal
@@ -26,25 +26,28 @@ quantitative, continuous
 **e)**  
 quantitative, discrete
 
-### Problem 2
+## Problem 2
 
 **a)**  
 ```{r, message = FALSE}
 c1 <- c(45, 39, 25, 47, 49, 5, 70, 99, 74, 37, 99, 35, 8, 59)
 summary(c1)
+var(c1)
 sd(c1)
 ```
-mean = 49.36  
-median = 46  
-range = 99-5 = 94  
-SD = 28.85
+$mean:\bar{x} = \frac{45+39+25+47+49+5+70+99+74+37+99+35+8+59}{14}=49.36$  
+$median: 46$  
+$range : 99-5 = 94$  
+$sample \ variance :s^{2}=\frac{1}{n-1}\sum_{i=1}^{n} (x_{i}-\bar x)^{2}=\frac{[(45-49.36)^{2}+(39-49.36)^{2}+\dots +(59-49.36)^{2}]}{14}=832.1$  
+$sample \ SD: s=\sqrt{s^2}=28.8$
+
 
 **b)**
 ```{r, message = FALSE}
 boxplot(c1)
 ```
 
-The data is mostly symmetric but slightly right-skewed. There is no outlier. 50% of the data are between ~35 (Q1) and ~67 (Q3), and the range is from 5 to 94, so the data is very likely to be a bell-shaped unimodal distribution.  
+The data is mostly symmetric but slightly right-skewed. There is no outlier. 50% of the data are between ~35 (Q1) and ~67 (Q3), and the range is from 5 to 94, so the data is very likely to be a bell-shaped distribution, but we cannot tell if it is a unimodal by looking at the box plot.  
 
 **Additionally, ...**  
 **a)**
@@ -68,7 +71,7 @@ The box plot of bike crash has been described in part b) (The data is mostly sym
 **c)**  
 Although the box plot for the data of bike crash appears to have larger range and interquartile range, its median is smaller and it is right-skewed. So the group of bike crash appears to have a lower typical depression score.
 
-### Problem 3
+## Problem 3
 
 **a)**  
 $P(A)=6/12=50\%$
@@ -92,7 +95,7 @@ $P(B \mid A) \ne P(B) \qquad (2)$
 
 By (1) and (2), and the definition of independent events, events A and B are not independent.
 
-### Problem 4
+## Problem 4
 Given that $P(D)=5\%$, $P(D^c)=95\%$, $P(P \mid D)=80\%$, $P(P \mid D^c)=10\%$, by LTP,  
 \begin{align*}
 P(P) &=P(P \cap D) +P(P \cap D^c) \\

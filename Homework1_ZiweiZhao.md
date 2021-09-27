@@ -6,7 +6,7 @@ Ziwei Zhao
 library(tidyverse)
 ```
 
-### Problem 1
+## Problem 1
 
 **a)**  
 qualitative, ordinal
@@ -24,7 +24,7 @@ quantitative, continuous
 **e)**  
 quantitative, discrete
 
-### Problem 2
+## Problem 2
 
 **a)**
 
@@ -37,15 +37,22 @@ summary(c1)
     ##    5.00   35.50   46.00   49.36   67.25   99.00
 
 ``` r
+var(c1)
+```
+
+    ## [1] 832.0934
+
+``` r
 sd(c1)
 ```
 
     ## [1] 28.84603
 
-mean = 49.36  
-median = 46  
-range = 99-5 = 94  
-SD = 28.85
+$mean:\\bar{x} = \\frac{45+39+25+47+49+5+70+99+74+37+99+35+8+59}{14}=49.36$  
+*m**e**d**i**a**n* : 46  
+*r**a**n**g**e* : 99 − 5 = 94  
+$sample \\ variance :s^{2}=\\frac{1}{n-1}\\sum\_{i=1}^{n} (x\_{i}-\\bar x)^{2}=\\frac{\[(45-49.36)^{2}+(39-49.36)^{2}+\\dots +(59-49.36)^{2}\]}{14}=832.1$  
+$sample \\ SD: s=\\sqrt{s^2}=28.8$
 
 **b)**
 
@@ -58,7 +65,8 @@ boxplot(c1)
 The data is mostly symmetric but slightly right-skewed. There is no
 outlier. 50% of the data are between \~35 (Q1) and \~67 (Q3), and the
 range is from 5 to 94, so the data is very likely to be a bell-shaped
-unimodal distribution.
+distribution, but we cannot tell if it is a unimodal by looking at the
+box plot.
 
 **Additionally, …**  
 **a)**
@@ -95,7 +103,7 @@ range and interquartile range, its median is smaller and it is
 right-skewed. So the group of bike crash appears to have a lower typical
 depression score.
 
-### Problem 3
+## Problem 3
 
 **a)**  
 *P*(*A*) = 6/12 = 50%
@@ -120,7 +128,7 @@ $P(B \\mid A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{P(B)}{P(A)} = 1/6$
 By (1) and (2), and the definition of independent events, events A and B
 are not independent.
 
-### Problem 4
+## Problem 4
 
 Given that *P*(*D*) = 5%, *P*(*D*<sup>*c*</sup>) = 95%,
 *P*(*P* ∣ *D*) = 80%, *P*(*P* ∣ *D*<sup>*c*</sup>) = 10%, by LTP,  
